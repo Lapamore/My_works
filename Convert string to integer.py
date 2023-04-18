@@ -73,7 +73,7 @@ def parse_int(string):
 
     result_final = int(str(result_much)[:-5] + str(result_much)[-3:])
 
-    if result_final == 0:
+    if result_final == 0 or result_much == 1000000:
         return result_much
     else:
         return result_final
